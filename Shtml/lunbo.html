@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+        /*border: 1px solid red;*/
+      }
+
+      #wrap {
+        position: relative;
+        margin: 0 auto;
+        width: 730px;
+        height: 454px;
+        margin-top: 200px;
+        overflow: hidden;
+      }
+    #content {
+        position: absolute;
+        height: 100%;
+        left: -730px;
+      }
+      #content a {
+        float: left;
+        display: inline-block;
+        height: 100%;
+      }
+
+      #nums {
+        position: absolute;
+        top: 420px;
+        left: 290px;
+      }
+
+      #nums ul {
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+        list-style-type: none;
+        cursor: pointer;
+      }
+
+      #nums ul li {
+        width: 400px;
+        height: 400px;
+      
+        background: rgb(62, 62, 62);
+        color: white;
+        text-align: center;
+        line-height: 20px;
+      }
+
+      .changeBtn {
+        position: absolute;
+        top: 200px;
+        width: 30px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.2);
+        color: white;
+        font-size: 32px;
+        cursor: pointer;
+        display: none;
+      }
+
+      #right {
+        left: 700px;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../Scss/s.css">
+  </head>
+  <body>
+    <div id="zhuye">  
+    <div id="logo">
+      <dl>
+        <dt><img class="lg" src="../img2/logo.png"></dt>
+        <dt class="tou"><a class="to"href=""style="text-decoration: none;"><img class="mg"src="../img2/tou.png"style="width:30px;height:30px;border:1px solid white;">注册 登录</dt>
+        <dt id="sa" class="sz"><a class="sd"href=""style="text-decoration: none;"><img src="../img2/sz1.png"style="width:30px;height:30px;border:1px solid white;">播放记录</dt>
+        <dt id="sa" class="hg"><a class="bh"href=""style="text-decoration: none;"><img src="../img2/hg1.png"style="width:30px;height:30px;border:1px solid white;">会员</dt>
+      </dl>
+      <input class="sousuo"name="keyword"value="搜索我想要的东西"type="text">
+
+    </div>
+    <div id="xiala">
+      <p calss="xl"><a href=""style="text-decoration: none;color:white;font-weight:border;">首页</a></p>
+      <p calss="xl"><a href=""style="text-decoration: none;color:white;">动画</a></p>
+      <p calss="xl"><a href=""style="text-decoration: none;color:white;">人物</a></p>
+      <p calss="xl"><a href=""style="text-decoration: none;color:white;">收藏</a></p>
+      <p calss="xl"><a href=""style="text-decoration: none;color:white;color:white;">签到</a></p>
+      <p calss="xl"><a id="xl"href=""style="position: absolute;left: 700px;color:white;">APP下载</a></p>
+    </div>
+    <div id="box_header">
+      <div id="lunbo">
+        <a href="#"><img src="../img2/k1.png" alt="" /></a>
+            <a href="#"><img src="../img2/k1.png" alt="" class="show"/></a>
+            <a href="#"><img src="../img2/k1.png" alt="" class="show"/></a>
+            <a href="#"><img src="../img2/k1.png" alt="" class="show"/></a>
+            <a href="#"><img src="../img2/k1.png" alt="" class="show"/></a>
+            <a href="#"><img src="../img2/k1.png" alt="" class="show"/></a>
+            <a href="#"><img src="../img2/k1.png" alt="" class="show"/></a>
+            <a href="#"><img src="../img2/k1.png" alt="" /></a>
+            <div id="nums">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+      </div>
+      <div id="left" class="changeBtn">
+        &lt;
+      </div>
+      <div id="right" class="changeBtn">
+        &gt;
+      </div>
+    </div>
+      </div>
+      <div id="biaoqian"></div>
+      <div id="rm"></div>
+      <div id="xm"></div>
+      <div id="lj"></div>
+      <div id="lk"></div>
+      <div id="dj"></div>
+    </div>
+  </div>
+</body>
+    <div id="wrap">
+      <div id="content">
+        <a href="#"><img src="../img2/k1.png" alt="" /></a>
+        <a href="#"><img src="../img2/k1.png" alt="" class="show"/></a>
+        <a href="#"><img src="../img2/k1.png" alt="" class="show"/></a>
+        <a href="#"><img src="../img2/k1.png" alt="" class="show"/></a>
+        <a href="#"><img src="../img2/k1.png" alt="" class="show"/></a>
+        <a href="#"><img src="../img2/k1.png" alt="" class="show"/></a>
+        <a href="#"><img src="../img2/k1.png" alt="" class="show"/></a>
+        <a href="#"><img src="../img2/k1.png" alt="" /></a>
+      </div>
+      <div id="nums">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+        </ul>
+      </div>
+      <div id="left" class="changeBtn">
+        &lt;
+      </div>
+      <div id="right" class="changeBtn">
+        &gt;
+      </div>
+    </div>
+  </body>
+  <script src="tween.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    //获取各个界面元素
+    var wrap = document.getElementById('wrap');
+    var content = document.getElementById('content');
+    var left = document.getElementById('left');
+    var right = document.getElementById('right');
+    var aTags = content.getElementsByTagName('a');
+    //根据图片的数量重新设置content的宽度
+    content.style.width = aTags[0].offsetWidth * aTags.length + 'px';
+    //获取li标签数组
+    /*
+    querySelectorAll和querySelector是通过css选择器
+    去获取与之对应的标签或者所有符合条件的标签
+    */
+    var lis = document.querySelectorAll('#nums ul li');
+    var imgs = document.querySelectorAll('.show');
+    //先对鼠标移入移出事件做处理，鼠标移入：显示left、right
+    //鼠标移出，隐藏left、right
+    wrap.onmouseenter = function() {
+      left.style.display = 'block';
+      right.style.display = 'block';
+    };
+    wrap.onmouseleave = function() {
+      left.style.display = 'none';
+      right.style.display = 'none';
+    };
+    //定义轮播图必备的变量
+    var t = 0;//current times，当前执行动画的次数
+    var b = 0;//begin value，起始值
+    var c = -730;//change in value，变化值
+    var d = 70;//duration，持续时间
+    var timer;//定时器
+    var timerOutter;//定时器
+    var lastIndex = 0;//上一个显示的图片在数组中的下标
+    for (var i = 0; i < lis.length; i++) {
+      //给每个li标签设定自定义属性index，记录其在数组中的下标
+      lis[i].index = i;
+      lis[i].onmouseenter = function() {
+        clearInterval(timerOutter);
+        left.style.display = 'none';
+        right.style.display = 'none';
+        // TODO: 添加位移动画
+        console.log(event.target.index - lastIndex);
+        animateMove(event.target.index, event.target.index - lastIndex, false);
+      };
+      lis[i].onmouseleave = function() {
+        clearInterval(timer);
+        left.style.display = 'block';
+        right.style.display = 'block';
+        //将当前的li的index暂存下来
+        lastIndex = event.target.index;
+        //启动定时器，继续自动轮播
+        // TODO: 暂时缺少位移动画
+        timerOutter = setInterval('animateMove(lastIndex + 1, 1, true)', 2000);
+      };
+    }
+
+    //处理left、right点击后的切换图片效果
+    left.onclick = function() {
+      //销毁自动轮播定时器timer
+      clearInterval(timer);
+      // TODO: 调用位移动画切换一张图片
+      animateMove(lastIndex - 1, -1, false);
+      lastIndex--;
+    };
+    right.onclick = function() {
+      clearInterval(timer);
+      // TODO: 调用位移动画切换后一张图片
+      lastIndex = animateMove(lastIndex + 1, 1, false);
+      lastIndex++;
+    };
+    //处理left、right标签的鼠标移入、移出事件
+    //当鼠标移入时暂停自动轮播，移出时恢复自动轮播
+    left.onmouseenter = function() {
+      clearInterval(timerOutter);
+    };
+    left.onmouseleave = function() {
+      timerOutter = setInterval('animateMove(lastIndex + 1, 1, true)', 2000);
+    };
+    right.onmouseenter = function() {
+      clearInterval(timerOutter);
+    };
+    right.onmouseleave = function() {
+      timerOutter = setInterval('animateMove(lastIndex + 1, 1, true)', 2000);
+    };
+
+    //定义函数处理数字标签的选中颜色
+    function showCurrentNumberTag(index) {
+      for (var i = 0; i < lis.length; i++) {
+        lis[i].style.background = 'rgb(62, 62, 62)';
+      }
+      //根据传入的下标更该当前数字标签颜色
+      lis[index].style.background = 'rgb(180, 30, 30)';
+    }
+    //调用函数，默认0下标为红色
+    showCurrentNumberTag(0);
+    //定义位移动画函数
+    /*
+    currentIndex:当前需要执行位移动画的图片的下标
+    count:一共有多少张图片需要一次执行位移动画
+    isAuto:是否是自动轮播，即定时器调用还是手动点击
+    */
+    function animateMove(currentIndex, count, isAuto) {
+      //先行销毁定时器
+      clearInterval(timer);
+      b = -730 * (lastIndex + 1);
+      c = -730 * count;
+      function move() {
+        t++;
+        content.style.left = Tween.Linear(t, b, c, d) + 'px';
+        if(t == d) {
+          clearInterval(timer);
+          t = 0;//复位
+        }
+      }
+      //启动定时器timer
+      timer = setInterval(move, 1);
+      if(currentIndex == -1) {
+        //修改数字标签颜色起到指示作用
+        showCurrentNumberTag(imgs.length - 1);
+        content.style.left = -730 * imgs.length + 'px';
+        lastIndex = imgs.length;
+      } else if(currentIndex == imgs.length) {
+        showCurrentNumberTag(0);
+        content.style.left = -730 + 'px';
+        lastIndex = 0;
+      } else {
+        showCurrentNumberTag(currentIndex);
+        if (isAuto) {
+          lastIndex++;
+        }
+      }
+      return lastIndex;
+    }
+    //启动定时器
+    timerOutter = setInterval('animateMove(lastIndex + 1, 1, true)', 1000);
+  </script>
+</html>

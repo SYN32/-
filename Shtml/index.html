@@ -1,0 +1,835 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>乐看儿童动画</title>
+	<link rel="stylesheet" type="text/css" href="../Scss/s.css">
+</head>
+<body>
+	<div id="zhuye">   
+        <div id="logo">
+            <dl>
+                <dt><img class="lg" src="../img2/logo.png" style="position:absolute;"></dt>
+                <dt class="tou"><a class="to"href=""style="text-decoration: none;"><img class="mg"src="../img2/tou.png"style="width:30px;height:30px; position:abosoute;top:-18px;left:-40px;">注册 登录</dt>
+                <dt id="sa" class="sz"><a class="sd"href=""style="text-decoration: none;"><img src="../img2/sz1.png"style="width:30px;height:30px;position:abosoute;top:-18px;left:-45px;">播放记录</dt>
+                <dt id="sa" class="hg"><a class="bh"href=""style="text-decoration: none;"><img src="../img2/hg1.png"style="width:30px;height:30px;position:abosoute;top:-18px;left:-45px;">会员</dt>
+            </dl>
+            <input class="sousuo"name="keyword"value="搜索我想要的东西"type="text">
+        </div>
+		<div id="xiala">
+			<p calss="xl"><a href=""style="text-decoration: none;color:white;font-weight:border;">首页</a></p>
+            </p><a href="file:///Applications/XAMPP/xamppfiles/htdocs/%E9%A1%B9%E7%9B%AE%E6%9C%9F/Shtml/dh2.html"style="text-decoration: none;color:white;">动画</a>
+            </p>
+            <p calss="xl"><a href=""style="text-decoration: none;color:white;">人物</a></p>
+			<p calss="xl"><a href=""style="text-decoration: none;color:white;">收藏</a></p>
+			<p calss="xl"><a href=""style="text-decoration: none;color:white;color:white;">签到</a></p>
+			<p calss="xl"><a id="xl"href=""style="position: absolute;top:70px;color:white;">APP下载</a></p>
+		</div>
+		
+	</div> --><body id="page-index">
+<div class="box_header">
+    <div class="box_header_main">
+        <div class="ui_header">
+            <div class="clear"></div>
+            <a class="ui_header_logo" href="/" title="乐看儿童动画">乐看儿童动画</a>
+			<a class="ui_header_promo" href="/2013guoqing/" title="国庆特惠" target="_blank">国庆特惠</a>
+            <div class="ui_header_search">
+				<form method="get" action="/search/" id="search">
+					<span><input type="text" name="keyword" class="ui_header_search_input" value="搜索我想看的动画"  maxLength="20" autocomplete="off" /></span>
+					<input type="submit" value="" class="ui_header_search_button" title="搜索" />
+				</form>
+                <ul class="ui_header_search_result" id="resultBox">
+                </ul>
+            </div>
+            <dl class="ui_header_member">
+                <dt class="ui_header_member_server"></dt>
+                <dd class="ui_header_member_paylink"><a href="http://kids.lekan.com/member/?k_tjcode=3" target="_blank" class="member_link"><b></b>会员</a></dd>
+                <!--登录前显示{-->
+                <dd class="ui_header_member_info" id="playRecord">
+                    <a href="#" class="ui_header_member_info_name"><b></b>播放记录<em></em></a>
+                    <div class="ui_header_member_playsinfo" id="playRecordList">
+                        <p class="noData">您还没有看过影片</p>
+                        <ul class="ui_header_member_playsinfo_list">
+                        </ul>
+                        <!--<div class="clear_log"><a href="#" role="empty"><b></b><span>清空记录</span></a></div>-->
+                    </div>
+                </dd>
+                <dd class="ui_header_member_unlogin" ><b></b><a href="http://lekan.com/register/?site=5" eventTrack="{'category':'儿童网站', 'action':'注册入口', 'label':'首页头部注册按钮'}">注册</a><a href="http://lekan.com/login/?site=5">登录</a></dd>
+                <!--}-->
+            </dl>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="box_header_nav">
+        <div class="ui_nav">
+            <ul class="main_nav">
+                <li class="n_index"><a href="http://kids.lekan.com/" class="current"><span></span>首页</a></li>
+                <li class="n_character"><a href="file:///Applications/XAMPP/xamppfiles/htdocs/%E9%A1%B9%E7%9B%AE%E6%9C%9F/Shtml/dh.html" ><span></span>动画</a></li>
+                <li class="n_person"><a href="http://kids.lekan.com/figure/" ><span></span>人物</a></li>               
+                <!--<li class="n_topic"><a href="http://kids.lekan.com/free/" ><span></span>免费专区</a></li>-->
+                <!--<li class="n_topic"><a href="http://kids.lekan.com/topic/" ><span></span>专题</a></li>-->
+                <!--<li class="n_paster"><a href="http://kids.lekan.com/paster/" ><span></span>贴纸</a></li>-->
+				<li class="n_fav"><a href="http://kids.lekan.com/favor/"  unlogin="true" eventTrack="{'category':'儿童网站', 'action':'注册入口', 'label':'未注册状态点击收藏'}" ><span></span>收藏</a></li>
+				<li class="n_signIn"><a href="http://kids.lekan.com/activity/index?platform=8" ><span></span><b></b>签到</a></li>
+            </ul>
+            <div class="sub_nav">
+                <a href="http://app.lekan.com/download/kids/index.html" class="pub_applink" target="_blank">APP下载</a>
+				<!--
+				<a href="http://account.lekan.com/queryUserWatchVedioCardInfo/" class="pub_applink"  target="_blank" unlogin="true" >观影卡激活</a>
+				-->
+				<!--
+				<a href="http://app.lekan.com/download/kids-book/index.html?k_tjcode=36" class="pub_applink" target="_blank">儿童书下载</a>
+				-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box_cross">
+    <div class="box_contianer_index nopadding">
+        <!--首页焦点图--->
+<div class="focus">
+    <ul id="focus_banner" class="focus_banner">
+            <li class="current">
+            <a href="/video/134949/"><img src="http://res3.lekan.com/kids/textlink/134949_960x340.jpg" alt="梦幻动物园" title="梦幻动物园"></a>
+			<div class="des">
+                <h2>梦幻动物园</h2>
+                <p>最受欢迎的床边小故事。</p>
+			</div>
+        </li>
+        <li >
+            <a href="/video/134966/"><img src="http://res2.lekan.com/kids/textlink/134966_960x340.jpg" alt="神奇阿呦" title="神奇阿呦"></a>
+			<div class="des">
+                <h2>神奇阿呦</h2>
+                <p>外星人搞笑的地球生活</p>
+			</div>
+        </li>
+        <li >
+            <a href="/video/133746/"><img src="http://res5.lekan.com/kids/textlink/20130913_01.jpg" alt="蒂莫西上学记" title="蒂莫西上学记"></a>
+			<div class="des">
+                <h2>蒂莫西上学记</h2>
+                <p>开学啦！蒂莫西和他的同学们又见面了！看看都会有那些趣事发生吧</p>
+			</div>
+        </li>
+        <li >
+            <a href="/video/134965/"><img src="http://res2.lekan.com/kids/textlink/134965_960x340.jpg" alt="图图的智慧王国" title="图图的智慧王国"></a>
+			<div class="des">
+                <h2>图图的智慧王国</h2>
+                <p>和淘气好小孩学数学！</p>
+			</div>
+        </li>
+        <li >
+            <a href="/video/134639/"><img src="http://res3.lekan.com/kids/textlink/20140110_01.jpg" alt="新野生动物宝宝" title="新野生动物宝宝"></a>
+			<div class="des">
+                <h2>新野生动物宝宝</h2>
+                <p>带着宝宝们的好奇，跟着5位小伙伴一起探险美丽奇妙的大自然吧~</p>
+			</div>
+        </li>
+        <li >
+            <a href="/video/134961/"><img src="http://res5.lekan.com/kids/textlink/134961_960x340.jpg" alt="海底小纵队" title="海底小纵队"></a>
+			<div class="des">
+                <h2>海底小纵队</h2>
+                <p>探访神奇海底世界</p>
+			</div>
+        </li>
+    </ul>
+    <div id="focus_nav" class="focus_list">
+            <a href="/video/134949/" class="current"><img src="http://res3.lekan.com/kids/textlink/134949_62x43.jpg"></a>
+            <a href="/video/134966/" ><img src="http://res2.lekan.com/kids/textlink/134966_62x43.jpg"></a>
+            <a href="/video/133746/" ><img src="http://res5.lekan.com/kids/textlink/133746_62x43.jpg"></a>
+            <a href="/video/134965/" ><img src="http://res2.lekan.com/kids/textlink/134965_62x43.jpg"></a>
+            <a href="/video/134639/" ><img src="http://res3.lekan.com/kids/textlink/134639_62x43.jpg"></a>
+            <a href="/video/134961/" ><img src="http://res5.lekan.com/kids/textlink/134961_62x43.jpg"></a>
+    </div>
+    <div id="focus_mask" class="cover"></div>
+</div>
+        <div class="box_contianer_cross">
+		    <!首页标签模块-->
+		    <div class="tag_index">
+				<dl class="tag_left">
+					<dt>标签</dt>
+					<dd>
+						<ul class="list">
+							<li><a href="http://kids.lekan.com/character/27_5826/" class="green">2-4岁</a></li>
+							<li><a href="http://kids.lekan.com/character/27_5827/" class="blue">5-8岁</a></li>
+							<li><a href="http://kids.lekan.com/character/27_5828/" class="pink">9-12岁</a></li>
+							<li><a href="http://kids.lekan.com/character/26_5824/" class="purple width70">中文</a></li>
+							<li><a href="http://kids.lekan.com/character/26_5825/" class="khaki width70">英文</a></li>
+							<li><a href="http://kids.lekan.com/character/26_5823/" class="crimson width70">双语</a></li>
+							<li><a href="http://kids.lekan.com/character/26_5936/" class="mazarine width70">无对白</a></li>
+						</ul>
+					</dd>
+					<div class="clear"></div>
+				</dl>
+                <!--主题-->
+<dl>
+    <dt>主题</dt>
+    <dd>
+        <ul class="list">
+                                <li><a href="http://kids.lekan.com/special/2810/" class="blue">
+                    小小公主
+                    </a></li>
+                    <li><a href="http://kids.lekan.com/special/2811/" class="pink">
+                    友情故事
+                    </a></li>
+                    <li><a href="http://kids.lekan.com/special/2812/" class="green">
+                    成长启蒙
+                    </a></li>
+                    <li><a href="http://kids.lekan.com/special/2813/" class="khaki">
+                    亲子时光
+                    </a></li>
+                    <li><a href="http://kids.lekan.com/special/2809/" class="mazarine">
+                    探索发现
+                    </a></li>
+                    <li><a href="hsttp://kids.lekan.com/special/2894/" class="purple">
+                    气质课堂
+                    </a></li>
+        </ul>
+    </dd>
+    <div class="clear"></div>
+</dl>				<div class="clear"></div>			
+			</div>
+            <!--热门人物f_hotPerson_list.html-->
+<div class="hotPereson_list pub_pushTop15">
+    <h1 class="main_column_title_black"><a href="file:///Applications/XAMPP/xamppfiles/htdocs/%E9%A1%B9%E7%9B%AE%E6%9C%9F/Shtml/rw.html">热门人物<span>></span></a></h1>
+    <div class="hotPereson_list_inner">
+        <ul class="list" id="hotPeresonList">
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1938/"><img title="超级飞侠" src="http://res4.lekan.com/kids/figure/1938_330x350.png" alt="超级飞侠"></a></div>
+                </li>
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1936/"><img title="梦幻动物园" src="http://res2.lekan.com/kids/figure/1936_330x350.png" alt="梦幻动物园"></a></div>
+                </li>
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1929/"><img title="海底小纵队" src="http://res5.lekan.com/kids/figure/1929_330x350.png" alt="海底小纵队"></a></div>
+                </li>
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1928/"><img title="大吉" src="http://res4.lekan.com/kids/figure/1928_330x350.png" alt="大吉"></a></div>
+                </li>
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1902/"><img title="巴菲特神秘俱乐部" src="http://res3.lekan.com/kids/figure/1902_330x350.png" alt="巴菲特神秘俱乐部"></a></div>
+                </li>
+                <li class="last">
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1823/"><img title="麦斯和露比" src="http://res4.lekan.com/kids/figure/1823_330x350.png" alt="麦斯和露比"></a></div>
+                </li>
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1863/"><img title="小马宝莉" src="http://res4.lekan.com/kids/figure/1863_330x350.png" alt="小马宝莉"></a></div>
+                </li>
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1830/"><img title="蜘蛛夫人" src="http://res1.lekan.com/kids/figure/1830_330x350.png" alt="蜘蛛夫人"></a></div>
+                </li>
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1904/"><img title="爱心熊" src="http://res5.lekan.com/kids/figure/1904_330x350.png" alt="爱心熊"></a></div>
+                </li>
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1921/"><img title="狩魔之战" src="http://res2.lekan.com/kids/figure/1921_330x350.png" alt="狩魔之战"></a></div>
+                </li>
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1908/"><img title="奇先生妙小姐" src="http://res4.lekan.com/kids/figure/1908_330x350.png" alt="奇先生妙小姐"></a></div>
+                </li>
+                <li class="last">
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1836/"><img title="薇拉和她的野生动物" src="http://res2.lekan.com/kids/figure/1836_330x350.png" alt="薇拉和她的野生动物"></a></div>
+                </li>
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1848/"><img title="帝莫西上学记" src="http://res4.lekan.com/kids/figure/1848_330x350.png" alt="帝莫西上学记"></a></div>
+                </li>
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1940/"><img title="一起玩玩具" src="http://res1.lekan.com/kids/figure/1940_330x350.png" alt="一起玩玩具"></a></div>
+                </li>
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1941/"><img title="可可小爱" src="http://res2.lekan.com/kids/figure/1941_330x350.png" alt="可可小爱"></a></div>
+                </li>
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1915/"><img title="至Q宠物屋" src="http://res1.lekan.com/kids/figure/1915_330x350.png" alt="至Q宠物屋"></a></div>
+                </li>
+                <li >
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1900/"><img title="野生动物宝宝" src="http://res1.lekan.com/kids/figure/1900_330x350.png" alt="野生动物宝宝"></a></div>
+                </li>
+                <li class="last">
+                    <div class="poster"><a href="http://kids.lekan.com/figureInfo/1868/"><img title="变形金刚：救援机器人" src="http://res4.lekan.com/kids/figure/1868_330x350.png" alt="变形金刚：救援机器人"></a></div>
+                </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>			
+            <!--web端与IOS同步栏目-->
+<!--首页 web端与IOS同步栏目-->
+    <div class="index_video_list pub_pushTop15">
+        <h1 class="main_column_title_black">
+            <a href="http://kids.lekan.com/special/2872/">限时免费<span>></span></a>
+        </h1>
+        <ul class="list">
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134804/1/1/movie/">
+                                    <img src="http://res5.lekan.com/video/13/48/04/134804_286x380.jpg" alt="小马宝莉 第三季" title="小马宝莉 第三季">
+                                    <div class="play"><span></span></div>
+                                    <div class="free"></div>
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="小马宝莉 第三季" href="http://kids.lekan.com/video/134804/">
+                                    小马宝莉 第三季
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134948/1/1/movie/">
+                                    <img src="http://res4.lekan.com/video/13/49/48/134948_286x380.jpg" alt="大吉成长记" title="大吉成长记">
+                                    <div class="play"><span></span></div>
+                                    <div class="free"></div>
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="大吉成长记" href="http://kids.lekan.com/video/134948/">
+                                    大吉成长记
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134638/1/1/movie/">
+                                    <img src="http://res4.lekan.com/video/13/46/38/134638_286x380.jpg" alt="巴菲特神秘俱乐部" title="巴菲特神秘俱乐部">
+                                    <div class="play"><span></span></div>
+                                    <div class="free"></div>
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="巴菲特神秘俱乐部" href="http://kids.lekan.com/video/134638/">
+                                    巴菲特神秘俱乐部
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/133729/1/1/movie/">
+                                    <img src="http://res5.lekan.com/video/13/37/29/133729_286x380.jpg" alt="天才宝贝熊" title="天才宝贝熊">
+                                    <div class="play"><span></span></div>
+                                    <div class="free"></div>
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="天才宝贝熊" href="http://kids.lekan.com/video/133729/">
+                                    天才宝贝熊
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134803/1/1/movie/">
+                                    <img src="http://res4.lekan.com/video/13/48/03/134803_286x380.jpg" alt="至Q宠物屋" title="至Q宠物屋">
+                                    <div class="play"><span></span></div>
+                                    <div class="free"></div>
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="至Q宠物屋" href="http://kids.lekan.com/video/134803/">
+                                    至Q宠物屋
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="last">
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134965/1/1/movie/">
+                                    <img src="http://res1.lekan.com/video/13/49/65/134965_286x380.jpg" alt="图图的智慧王国" title="图图的智慧王国">
+                                    <div class="play"><span></span></div>
+                                    <div class="free"></div>
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="图图的智慧王国" href="http://kids.lekan.com/video/134965/">
+                                    图图的智慧王国
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="index_video_list pub_pushTop15">
+        <h1 class="main_column_title_black">
+            <a href="http://kids.lekan.com/special/2871/">乐看精品屋<span>></span></a>
+        </h1>
+        <ul class="list">
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134974/1/1/movie/">
+                                    <img src="http://res5.lekan.com/video/13/49/74/134974_286x380.jpg" alt="超级飞侠" title="超级飞侠">
+                                    <div class="play"><span></span></div>
+                                    <div class="free"></div>
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="超级飞侠" href="http://kids.lekan.com/video/134974/">
+                                    超级飞侠
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134949/1/1/movie/">
+                                    <img src="http://res5.lekan.com/video/13/49/49/134949_286x380.jpg" alt="梦幻动物园 第一季" title="梦幻动物园 第一季">
+                                    <div class="play"><span></span></div>
+                                    
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="梦幻动物园 第一季" href="http://kids.lekan.com/video/134949/">
+                                    梦幻动物园 第一
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/133742/1/1/movie/">
+                                    <img src="http://res3.lekan.com/video/13/37/42/133742_286x380.jpg" alt="薇拉和她的野生动物" title="薇拉和她的野生动物">
+                                    <div class="play"><span></span></div>
+                                    
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="薇拉和她的野生动物" href="http://kids.lekan.com/video/133742/">
+                                    薇拉和她的野生动
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/133740/1/1/movie/">
+                                    <img src="http://res1.lekan.com/video/13/37/40/133740_286x380.jpg" alt="蜘蛛夫人" title="蜘蛛夫人">
+                                    <div class="play"><span></span></div>
+                                    
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="蜘蛛夫人" href="http://kids.lekan.com/video/133740/">
+                                    蜘蛛夫人
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/133744/1/1/movie/">
+                                    <img src="http://res5.lekan.com/video/13/37/44/133744_286x380.jpg" alt="麦斯和露比" title="麦斯和露比">
+                                    <div class="play"><span></span></div>
+                                    
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="麦斯和露比" href="http://kids.lekan.com/video/133744/">
+                                    麦斯和露比
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="last">
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/133746/1/1/movie/">
+                                    <img src="http://res2.lekan.com/video/13/37/46/133746_286x380.jpg" alt="帝莫西上学记" title="帝莫西上学记">
+                                    <div class="play"><span></span></div>
+                                    
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="帝莫西上学记" href="http://kids.lekan.com/video/133746/">
+                                    帝莫西上学记
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="index_video_list pub_pushTop15">
+        <h1 class="main_column_title_black">
+            <a href="http://kids.lekan.com/special/2870/">乐看智慧园<span>></span></a>
+        </h1>
+        <ul class="list">
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134991/1/1/movie/">
+                                    <img src="http://res2.lekan.com/video/13/49/91/134991_286x380.jpg" alt="蓝迪SHOW手工1分钟" title="蓝迪SHOW手工1分钟">
+                                    <div class="play"><span></span></div>
+                                    <div class="free"></div>
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="蓝迪SHOW手工1分钟" href="http://kids.lekan.com/video/134991/">
+                                    蓝迪SHOW手工
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134972/1/1/movie/">
+                                    <img src="http://res3.lekan.com/video/13/49/72/134972_286x380.jpg" alt="梦幻动物园 第三季" title="梦幻动物园 第三季">
+                                    <div class="play"><span></span></div>
+                                    
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="梦幻动物园 第三季" href="http://kids.lekan.com/video/134972/">
+                                    梦幻动物园 第三
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134824/1/1/movie/">
+                                    <img src="http://res5.lekan.com/video/13/48/24/134824_286x380.jpg" alt="变形金刚-狩魔之战" title="变形金刚-狩魔之战">
+                                    <div class="play"><span></span></div>
+                                    
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="变形金刚-狩魔之战" href="http://kids.lekan.com/video/134824/">
+                                    变形金刚-狩魔之
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134804/1/1/movie/">
+                                    <img src="http://res5.lekan.com/video/13/48/04/134804_286x380.jpg" alt="小马宝莉 第三季" title="小马宝莉 第三季">
+                                    <div class="play"><span></span></div>
+                                    <div class="free"></div>
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="小马宝莉 第三季" href="http://kids.lekan.com/video/134804/">
+                                    小马宝莉 第三季
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134964/1/1/movie/">
+                                    <img src="http://res5.lekan.com/video/13/49/64/134964_286x380.jpg" alt="海底小纵队 特别篇" title="海底小纵队 特别篇">
+                                    <div class="play"><span></span></div>
+                                    
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="海底小纵队 特别篇" href="http://kids.lekan.com/video/134964/">
+                                    海底小纵队 特别
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="last">
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134981/1/1/movie/">
+                                    <img src="http://res2.lekan.com/video/13/49/81/134981_286x380.jpg" alt="可可小爱智慧童谣系列-第一季" title="可可小爱智慧童谣系列-第一季">
+                                    <div class="play"><span></span></div>
+                                    <div class="free"></div>
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="可可小爱智慧童谣系列-第一季" href="http://kids.lekan.com/video/134981/">
+                                    可可小爱智慧童谣
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="index_video_list pub_pushTop15">
+        <h1 class="main_column_title_black">
+            <a href="http://kids.lekan.com/special/2868/">大家都爱看<span>></span></a>
+        </h1>
+        <ul class="list">
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134639/1/1/movie/">
+                                    <img src="http://res5.lekan.com/video/13/46/39/134639_286x380.jpg" alt="新野生动物宝宝" title="新野生动物宝宝">
+                                    <div class="play"><span></span></div>
+                                    
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="新野生动物宝宝" href="http://kids.lekan.com/video/134639/">
+                                    新野生动物宝宝
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134961/1/1/movie/">
+                                    <img src="http://res2.lekan.com/video/13/49/61/134961_286x380.jpg" alt="海底小纵队 第一季" title="海底小纵队 第一季">
+                                    <div class="play"><span></span></div>
+                                    
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="海底小纵队 第一季" href="http://kids.lekan.com/video/134961/">
+                                    海底小纵队 第一
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134966/1/1/movie/">
+                                    <img src="http://res2.lekan.com/video/13/49/66/134966_286x380.jpg" alt="神奇阿呦" title="神奇阿呦">
+                                    <div class="play"><span></span></div>
+                                    
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="神奇阿呦" href="http://kids.lekan.com/video/134966/">
+                                    神奇阿呦
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/135001/1/1/movie/">
+                                    <img src="http://res2.lekan.com/video/13/50/01/135001_286x380.jpg" alt="超级飞侠大百科第一季" title="超级飞侠大百科第一季">
+                                    <div class="play"><span></span></div>
+                                    <div class="free"></div>
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="超级飞侠大百科第一季" href="http://kids.lekan.com/video/135001/">
+                                    超级飞侠大百科第
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134985/1/1/movie/">
+                                    <img src="http://res1.lekan.com/video/13/49/85/134985_286x380.jpg" alt="蓝迪儿歌" title="蓝迪儿歌">
+                                    <div class="play"><span></span></div>
+                                    <div class="free"></div>
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="蓝迪儿歌" href="http://kids.lekan.com/video/134985/">
+                                    蓝迪儿歌
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="last">
+                        <div class="wrap">
+                            <div class="poster">
+                                <a href="http://kids.lekan.com/play/134993/1/1/movie/">
+                                    <img src="http://res4.lekan.com/video/13/49/93/134993_286x380.jpg" alt="Titi&Kiki之魔力课堂" title="Titi&Kiki之魔力课堂">
+                                    <div class="play"><span></span></div>
+                                    <div class="free"></div>
+                                </a>
+                            </div>
+                            <div class="name">
+                                <a title="Titi&Kiki之魔力课堂" href="http://kids.lekan.com/video/134993/">
+                                    Titi&Kik
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+            <!--文字链接f_home_textlink.html-->
+            <div class="pub_pushTop25">
+                <div class="box_contianer_cross">
+                    <div class="text_link">
+                        <ul class="list">
+                            <li class="download">
+                                <h2>支持的设备应用下载</h2>
+                                <dl>
+                                    <dt>移动客户端</dt>
+                                    <dd>
+                                        <a target="_blank" href="http://um0.cn/5JGeO1/" class="icon_mac"><b></b>App Store </a>
+                                        <a target="_blank" href="http://app.lekan.com/download/kids/index.html" class="icon_and"><b></b>Android</a>
+                                    </dd>
+                                </dl>
+                                <!--dl>
+                                    <dt>TV客户端</dt>
+                                    <dd>
+                                        <a target="_blank" href="http://kids.lekan.com/mi" class="icon_mi"><b></b>TV盒子 </a>
+                                    </dd>
+                                </dl-->
+                            </li>
+                            <!--常见问题-->
+<li class="aq">
+    <h2>常见问题 </h2>
+    <ol>
+        <li><a target="_blank" href="http://account.lekan.com/payfaq/">如何订购乐看儿童频道的付费服务？</a></li>
+        <li><a target="_blank" href="http://account.lekan.com/payfaq/">乐看儿童支持哪些支付方式？</a></li>
+        <li><a target="_blank" href="http://account.lekan.com/parentfaq/">如何设置孩子可以收看的内容？</a></li>
+        <li><a target="_blank" href="http://account.lekan.com/help/">播放页面位置显示空白是什么原因？</a></li>
+        <li><a target="_blank" href="http://account.lekan.com/help/">如何找到我上次看到的动画片？</a></li>
+    </ol>
+</li>
+                            <li class="help">
+                                <h2>品质服务</h2>
+                                <ol>
+                                    <li><a target="_blank" href="http://account.lekan.com/help/" class="feedback">在线反馈</a></li>
+                                    <li>客服QQ：<a href="http://wpa.qq.com/msgrd?v=3&uin=2388119113&site=qq&menu=yes" target="_blank"><img style="vertical-align:middle" border="0" title="点击这里给我发消息" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:14977762:42"></a></li>
+                                    <li>客服电话：4000-650-818</li>
+                                    <li>官方微博：</li>
+                                    <li><a target="_blank" href="http://weibo.com/lekankids" class="icon_sina"><b></b>新浪微博</a><a target="_blank" href="http://t.qq.com/lekankids" class="icon_tencent"><b></b>腾讯微博</a></li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+					<!--友情链接文字--->
+					<div class="index_partner_txt">
+						<h1>友情链接</h1>
+						<ul class="list">
+							<li class="one">
+								<div class="name"><a target="_blank"  href="http://www.ibabyzone.cn">宝宝地带</a></div>
+							</li>
+							<li>
+								<div class="name"><a target="_blank"  href="http://www.kangq.com">康Q网</a></div>
+							</li>
+							<li>
+								<div class="name"><a target="_blank"  href="http://www.mzjk.com">《母子健康》</a></div>
+							</li>
+							<li>
+								<div class="name"><a target="_blank"  href="http://www.xmfish.com">小鱼网</a></div>
+							</li>
+							<li>
+								<div class="name"><a target="_blank" href="http://www.ankang06.org">安康家园网</a></div>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+                </div>
+            </div>
+<div class="box_footer">
+    <!--热门动画片{-->
+    <!--首页 热门动画-->
+<div class="partner_txt">
+    <h1>热门动画片</h1>
+    <ul class="list">
+                    <li class="one">
+                <div class="name"><a target="_blank"  href="http://kids.lekan.com/video/134824/">变形金刚-狩魔之战</a></div>
+            </li>
+            <li >
+                <div class="name"><a target="_blank"  href="http://kids.lekan.com/video/134803/">至Q宠物屋</a></div>
+            </li>
+            <li >
+                <div class="name"><a target="_blank"  href="http://kids.lekan.com/video/134964/">海底小纵队 特别篇</a></div>
+            </li>
+    </ul>
+    <div class="clear"></div>
+</div>    <!--}-->
+    <div class="aboutus">
+        <span>官方微博 </span><a title="新浪官方微博" class="wb_sina" target="_blank" href="http://weibo.com/lekankids"></a> <a title="腾讯官方微博" class="wb_tencent" target="_blank" href="http://t.qq.com/lekankids"></a><br>
+        <span>客服电话：4000-650-818</span>
+    </div>
+    <div class="copyright">
+        
+          <a target="_blank" href="">公司介绍</a>   
+        
+        | <a target="_blank" href="">APP专区</a>
+        
+        | <a target="_blank" href="">帮助与反馈</a> 
+        
+        | <a target="_blank" href="">联系方式</a>
+        
+        | <a target="_blank" href="">线下销售</a>
+        
+        <a target="_blank" href="">友情链接</a>&nbsp;|&nbsp;<a target="" href="/mama/">致妈妈</a><br>
+        
+        <a target="_blank" href="http://res.lekan.com/license/icp.jpg">电信与信息服务业务经营许可证:京ICP证040322号</a>
+        
+        <a target="_blank" href="http://res.lekan.com/license/s_licence.jpg">信息网络传播节目视听许可证:0110428</a>  
+        
+        <a target="_blank" href=""><img src="http://pdk.lekan.
+
+         com/images/icon-police.png" style="padding:0 2px 0 5px"/>京公网安备 11010502030454号</a><br>
+        
+        <a target="_blank" href="http://res.lekan.com/license/jww.jpg">网络文化经营许可证：京网文[2013]1077-1126</a>
+        
+        <a target="_blank" href="#">信息系统安全等级保护备案证明</a><br>
+		
+        <a href="http://res.lekan.com/license/hlwcbxkz.jpg" target="_blank">互联网出版许可证：新出网证（京）字195号</a>
+        
+        <a href="http://res.lekan.com/license/gbdsjmzzjyxkz.jpg" target="_blank">广播电视节目制作经营许可证：（京）字第01136号</a>
+    
+    </div>
+   
+    <div class="clear"></div>
+</div>
+
+<div class="ui-floating">
+    
+    <ul class="sl-promoList">
+        
+        <li class="sl-promoList-item">
+           
+            <a target="_self" class="sl-link wx" title="微信"><div class="wx-popup"><div class="wx-popup-text">关注微信</div></div></a>
+        
+        </li>
+       
+        <li class="sl-promoList-item"><a href="" target="_blank" class="sl-link survery" title="App下载"><div class="app-popup"><div class="app-popup-text">扫一扫<br />立即下载</div></div></a></li>
+    
+    </ul>
+</div>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23026692-1']);
+    _gaq.push(['_setDomainName', '.lekan.com']);
+    _gaq.push(['_setAllowHash', false]);
+    if(location.href.indexOf("404") >=0){
+        _gaq.push(['_trackPageview', '/404.html?page=' + document.location.pathname + document.location.search + '&from=' + document.referrer]);
+    }
+    _gaq.push(['_setCustomVar', 1, 'Uer Type', 'visitor', 2]);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        //ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    r _hmt = _hmt || [];
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Face49a174037caa464f7aaefd5bb75f4' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../Sjs/index.js"></script>
+
+</html>
